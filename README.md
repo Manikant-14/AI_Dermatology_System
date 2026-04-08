@@ -1,25 +1,22 @@
-# AI Dermatology Intelligence System
+# 🩺 AI Dermatology Intelligence System
 
-## Overview
-A deep learning system for skin lesion classification and segmentation to assist in early detection and severity analysis.
+A full-stack clinical AI pipeline for skin lesion analysis.
 
-## Features
-- Multi-class classification (7 classes)
-- Lesion segmentation using U-Net
-- Grad-CAM explainability
-- Severity scoring (ABCD rule)
-- Web app deployment (Streamlit + FastAPI)
+## 🔬 What it does
+- **Classification** — MobileNetV2 fine-tuned on HAM10000 (10K images, 7 classes) → **77% accuracy**
+- **Segmentation** — U-Net on ISIC 2018 → **0.86 Dice Score**, validated on PH2
+- **XAI** — Grad-CAM heatmaps for clinical explainability
+- **Severity Scoring** — ABCD rule-based engine
+- **Deployment** — Streamlit + FastAPI + MongoDB, ~250ms inference
 
-## Tech Stack
-Python, TensorFlow, Keras, OpenCV, Streamlit, FastAPI, MongoDB
+## 📦 Stack
+Python · TensorFlow · Keras · MobileNetV2 · U-Net · OpenCV · Grad-CAM · Streamlit · FastAPI · MongoDB
 
-## Results
-- 77% classification accuracy (HAM10000 dataset)
-- 0.86 Dice Score (ISIC 2018 segmentation)
+## 📊 Datasets
+HAM10000 · ISIC 2018 · ISIC 2019 (~25K images) · PH2
 
-## Datasets
-- HAM10000
-- ISIC 2018 / 2019
+## 📁 Project Status
+🚧 In active development — classification and segmentation modules complete, deployment pipeline in progress.
 - PH2
 
 ## Future Improvements
